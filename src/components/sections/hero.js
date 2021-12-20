@@ -64,23 +64,22 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a web developer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
+        I’m a web developer specializing in building exceptional
+        digital experiences. Currently, I’m focused on improving my React skills
         at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        <a href="https://udemy.com/" target="_blank" rel="noreferrer">
+          Udemy
         </a>
-        .
+        , while looking for a React developer position.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
+      href="#projects"
       rel="noreferrer">
-      Check out my course!
+      Check out my portfolio!
     </a>
   );
 
