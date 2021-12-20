@@ -5,7 +5,7 @@
   serpapinto.pt - v1
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://serpapinto.pt" target="_blank">serpapinto.pt</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://serpapinto.pt" target="_blank">serpapinto.pt</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <!-- <p align="center">
   Previous iterations:
