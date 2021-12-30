@@ -1,9 +1,9 @@
 ---
 date: '2'
-title: 'Spotify Profile'
-cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+title: 'Dev Connector'
+cover: './DevConnector.png'
+github: 'https://github.com/lulasp/devconnector'
+external: 'https://hidden-reaches-97778.herokuapp.com/'
 tech:
   - React
   - Styled Components
