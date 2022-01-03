@@ -138,19 +138,21 @@ const About = () => {
             <p>
               Hello! My name is Luís Serpa Pinto and I’m from Porto, Portugal! Since early in my life I developed
               an interest in computers, the internet, and their capabilities. As a result of this interest I graduated in Multimedia
-              Communication Technologies at <a href="https://us.mullenlowe.com/">ISMAI</a>, all this to achieve my goal: Becoming a web developer.
+              Communication Technologies at <a href="https://us.mullenlowe.com/" target="_blank">ISMAI</a>, all this to achieve my goal: Becoming a web developer.
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working with a{' '}
-              <a href="https://us.mullenlowe.com/"> rapidly growing Dutch start-up</a>, a well known and trusted {' '}
-              <a href="https://us.mullenlowe.com/">Portuguese health software player</a>, and a small but relevant {' '}
-              <a href="https://us.mullenlowe.com/">web solutions company. </a>{' '}
+              <a href="https://us.mullenlowe.com/" target="_blank"> rapidly growing Dutch start-up</a>, a well known and trusted {' '}
+              <a href="https://us.mullenlowe.com/" target="_blank">Portuguese health software player</a>, and a small but relevant {' '}
+              <a href="https://us.mullenlowe.com/" target="_blank">web solutions company. </a>{' '}
               For the past couple of months I have been building web products for a variety of clients.
             </p>
 
             <p>
-              My main focus these days is improving my skills and finding a new job as a React developer.
+              My main focus these days is improving my skills and finding a new job as a React developer. I have been doing the {' '}
+              <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target="_blank">React - Complete Guide </a> course
+              and I have also recently started doing a tutorial on Solidity - <a href='https://cryptozombies.io/' target="_blank">CryptoZombies.io</a>
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
