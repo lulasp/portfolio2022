@@ -1,12 +1,13 @@
 ---
 date: '2016-08-31'
-title: 'Software Developer'
+title: 'Web Developer'
 company: 'Fastluza'
+abrev: 'TechCat.com'
 location: 'Porto, Portugal'
-range: 'June 2017 - August 2019'
+range: 'March 2016 - April 2017'
 url: 'https://fastluza.com/'
 ---
 
-- Support and development team, developed and maintained major features of Glintt's healthcare software, using PL/SQL
-- Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Glintt's platforms
-- Work with multi-disciplinary teams of engineers, designers, medical staff and clients on a daily basis
+- Developed and maintained websites for Fastluzas' clients
+- Worked with WordPress (PHP), Laravel (PHP), JavaScript and a few other technologies
+- Handle clients requests and implement their ideas alongside a small team of developers and designers
