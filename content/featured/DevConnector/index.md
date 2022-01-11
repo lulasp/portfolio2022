@@ -6,10 +6,10 @@ github: 'https://github.com/lulasp/devconnector'
 external: 'https://hidden-reaches-97778.herokuapp.com/'
 tech:
   - React
-  - Styled Components
   - Express
-  - Spotify API
+  - MongoDB
+  - Node
   - Heroku
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+A React platform for developers to connect made during a <a href="https://www.udemy.com/course/mern-stack-front-to-back/">MERN Stack Udemy course</a>. Users can create an account, edit their profile and create posts, connecting with other developers. To login either sign-up for an account or use these credentials luis.scsp@gmail.com and "\*m3M&ghyDoSmYZxFh"
