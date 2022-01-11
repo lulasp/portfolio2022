@@ -7,7 +7,8 @@ tech:
   - HTML
   - CSS
   - Javascript
+company: 'Freelancer'
 showInProjects: true
 ---
 
-A quick and easy website I created for a friend. Didn't even charge him lol
+Built a very simple website for a friend that works as a photographer.

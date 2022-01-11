@@ -13,4 +13,4 @@ company: 'Freelancer'
 showInProjects: true
 ---
 
-Building a custom site with WordPress.
+Built a custom site with WordPress based on a theme.
