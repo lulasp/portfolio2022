@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'CSS/SASS', 'React', 'Drupal', 'WordPress', 'Agile - scrum & Kanban'];
+  const skills = ['JavaScript (ES6+)', 'CSS/SASS', 'React', 'Drupal', 'WordPress'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -138,21 +138,23 @@ const About = () => {
             <p>
               Hello! My name is Luís Serpa Pinto and I’m from Porto, Portugal! Since early in my life I developed
               an interest in computers, the internet, and their capabilities. As a result of this interest I graduated in Multimedia
-              Communication Technologies at <a href="https://us.mullenlowe.com/" target="_blank">ISMAI</a>, all this to achieve my goal: Becoming a web developer.
+              Communication Technologies at <a href="https://www.ismai.pt/pt" target="_blank">ISMAI</a>, all this to achieve my goal: Becoming a web developer.
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working with a{' '}
-              <a href="https://us.mullenlowe.com/" target="_blank"> rapidly growing Dutch start-up</a>, a well known and trusted {' '}
-              <a href="https://us.mullenlowe.com/" target="_blank">Portuguese health software player</a>, and a small but relevant {' '}
-              <a href="https://us.mullenlowe.com/" target="_blank">web solutions company. </a>{' '}
-              For the past couple of months I have been building web products for a variety of clients.
+              <a href="https://www.technologycatalogue.com/" target="_blank"> rapidly growing Dutch start-up</a>, a well known and trusted {' '}
+              <a href="https://www.glintt.com/" target="_blank">Portuguese health software player</a>, and a small but relevant {' '}
+              <a href="https://fastluza.com" target="_blank">web solutions company. </a>{' '}
+              For the past couple of months I have been building and refining web products for a variety of clients.
             </p>
 
             <p>
-              My main focus these days is improving my skills and finding a new job as a React developer. I have been doing the {' '}
-              <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target="_blank">React - Complete Guide </a> course
-              and I have also recently started doing a tutorial on Solidity - <a href='https://cryptozombies.io/' target="_blank">CryptoZombies.io</a>
+              My main focus these days is improving my skills and finding a new job as a React developer. I have concluded the {' '}
+              <a href='https://www.udemy.com/course/mern-stack-front-to-back/' target="_blank">MERN Stack</a> course,
+              and recently I have been working on finishing the {' '}
+              <a href='https://www.udemy.com/course/react-the-complete-guide-incl-redux/' target="_blank">React - Complete Guide </a> course.
+              I have also started doing a tutorial on Solidity - <a href='https://cryptozombies.io/' target="_blank">CryptoZombies.io</a>.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
