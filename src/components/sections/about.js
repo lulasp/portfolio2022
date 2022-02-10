@@ -142,7 +142,7 @@ const About = () => {
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working with a{' '}
+              Fast-forward to today, and I’ve had the privilege of working in a{' '}
               <a href="https://www.technologycatalogue.com/" target="_blank"> rapidly growing Dutch start-up</a>, a well known and trusted {' '}
               <a href="https://www.glintt.com/" target="_blank">Portuguese health software player</a>, and a small but relevant {' '}
               <a href="https://fastluza.com" target="_blank">web solutions company. </a>{' '}
