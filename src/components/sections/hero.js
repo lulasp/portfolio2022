@@ -67,7 +67,7 @@ const Hero = () => {
         I’m a web developer specializing in building exceptional
         digital experiences. Currently, I’m focused on improving my React skills
         by doing a couple of courses at{' '}
-        <a href="https://udemy.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.udemy.com/user/luis-serpa-pinto/" target="_blank" rel="noreferrer">
           Udemy
         </a>
         , while looking for a React developer position.
