@@ -4,7 +4,7 @@ title: 'Web Developer'
 company: 'TechnologyCatalogue.com'
 abrev: 'TechCat.com'
 location: 'Delft, Netherlands'
-range: 'May 2020 - June 2021'
+range: 'April 2020 - June 2021'
 url: 'https://www.technologycatalogue.com/'
 ---
 

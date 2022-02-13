@@ -2,9 +2,9 @@
 date: '2017-06-31'
 title: 'Software Developer'
 company: 'Glintt'
-abrev: 'TechCat.com'
+abrev: 'Glintt'
 location: 'Porto, Portugal'
-range: 'June 2017 - August 2019'
+range: 'June 2017 - August 2018'
 url: 'https://glintt.com/'
 ---
 

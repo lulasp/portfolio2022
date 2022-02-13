@@ -2,7 +2,7 @@
 date: '2016-08-31'
 title: 'Web Developer'
 company: 'Fastluza'
-abrev: 'TechCat.com'
+abrev: 'Fastluza'
 location: 'Porto, Portugal'
 range: 'March 2016 - April 2017'
 url: 'https://fastluza.com/'

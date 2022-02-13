@@ -2,9 +2,9 @@
 date: '2020-08-31'
 title: 'Web Developer'
 company: 'Freelancer'
-abrev: 'TechCat.com'
+abrev: 'Freelancer'
 location: 'Porto, Portugal'
-range: 'January 2014 - Current'
+range: 'January 2016 - Current'
 url: 'https://serpapinto.pt/'
 ---
 
