@@ -7,6 +7,8 @@ cta: ''
 tech:
   - Wordpress
   - JavaScript
+  - CSS
+  - HTML
 ---
 
-A company specialized in food packaging in which I made several changes to the WordPress theme.
+A WordPress website to showcase the company's products and area of expertise. I worked on making several changes to the theme and also worked on content managment.
