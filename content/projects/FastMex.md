@@ -1,5 +1,5 @@
 ---
-date: '2017-12-01'
+date: '2016-12-01'
 title: 'FastMex'
 github: ''
 external: 'http://www.fastmex.pt/'
@@ -12,4 +12,4 @@ company: 'Fastluza'
 showInProjects: true
 ---
 
-A WordPress platform for companies to manage the maintenance of fire extinguishers. The goal was to have a centralized place where companies could have the details for their fire extinguishers and schedule maintenance as well as replacements.
+Worked on and helped built this platform. I also worked with content managment and research.

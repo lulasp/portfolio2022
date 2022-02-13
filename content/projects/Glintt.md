@@ -1,5 +1,5 @@
 ---
-date: '2020-01-10'
+date: '2018-02-20'
 title: 'Glintt'
 external: 'https://www.glintt.com'
 tech:
@@ -8,4 +8,4 @@ company: 'Glintt'
 showInProjects: true
 ---
 
-Worked on the development and support team on multiple PL/SQL platforms for Glintts' healthcare software.
+Part of the development and support team on multiple PL/SQL platforms for Glintts' healthcare software.

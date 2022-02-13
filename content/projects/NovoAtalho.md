@@ -1,5 +1,5 @@
 ---
-date: '2018-12-29'
+date: '2017-12-29'
 title: 'Novo Atalho'
 external: 'https://www.novoatalho.pt/'
 tech:
@@ -10,4 +10,4 @@ company: 'Fastluza'
 showInProjects: true
 ---
 
-A well known portuguese electronics shop, both physical and online. I developed features such as the products sidebar, the hero slider on the homepage, the logo carousel, and a few more. I also helped with the content managment.
+Helped in developing some features on this ecommerce website and, I also worked with the content manager.

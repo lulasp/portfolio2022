@@ -11,4 +11,4 @@ company: 'Freelancer'
 showInProjects: true
 ---
 
-Build a personal portfolio made from scratch to showcase my projects and skills.
+Built a personal portfolio from scratch to showcase my projects, document my skills and write a little about myself.
