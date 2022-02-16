@@ -2,7 +2,7 @@
 date: '2022-01-01'
 title: 'Portfolio v2'
 github: 'https://github.com/lulasp/portfolio2022'
-external: 'https://serpapinto.pt'
+external: 'http://serpapinto.pt'
 tech:
   - React
   - CSS
