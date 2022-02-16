@@ -138,7 +138,7 @@ const ArchivePage = ({ location, data }) => {
   const windowWidth = window.innerWidth;
   let mobile = false;
 
-  if (windowWidth <= 768) {
+  if (windowWidth <= 480) {
     mobile = true;
   }
 
@@ -189,7 +189,7 @@ const ArchivePage = ({ location, data }) => {
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{archiveTitle && windowWidth <= 768 ? archiveTitle : title}</td>
+                      <td className="title">{archiveTitle && mobile ? archiveTitle : title}</td>
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
