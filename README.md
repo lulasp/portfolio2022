@@ -62,5 +62,5 @@
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
 
 <p align="center">
-  **Edited by Luís Serpa Pinto. Built by Brittany Chiang**
+  <small> Edited by Luís Serpa Pinto. Built by Brittany Chiang.</small>
 </p>
