@@ -5,7 +5,7 @@ company: 'Freelancer'
 abrev: 'Freelancer'
 location: 'Porto, Portugal'
 range: 'January 2016 - Current'
-url: 'https://serpapinto.pt/'
+url: 'http://serpapinto.pt/'
 ---
 
 - During my years as a web developer I have worked on multiple projects
