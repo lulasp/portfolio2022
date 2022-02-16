@@ -135,6 +135,12 @@ const ArchivePage = ({ location, data }) => {
   const revealTable = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const windowWidth = window.innerWidth;
+  let mobile = false;
+
+  if (windowWidth <= 768) {
+    mobile = true;
+  }
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -175,6 +181,7 @@ const ArchivePage = ({ location, data }) => {
                     github,
                     external,
                     title,
+                    archiveTitle,
                     tech,
                     company,
                   } = node.frontmatter;
@@ -182,7 +189,7 @@ const ArchivePage = ({ location, data }) => {
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{title}</td>
+                      <td className="title">{archiveTitle && windowWidth <= 768 ? archiveTitle : title}</td>
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
@@ -251,6 +258,7 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
+            archiveTitle
             tech
             github
             external

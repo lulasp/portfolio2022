@@ -176,6 +176,7 @@ const Jobs = () => {
             frontmatter {
               title
               company
+              abrev
               location
               range
               url
@@ -194,6 +195,13 @@ const Jobs = () => {
   const tabs = useRef([]);
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const windowWidth = window.innerWidth;
+  let mobile = false;
+
+  // If we're at mobile, use abrev
+  if (windowWidth <= 600) {
+    mobile = true;
+  }
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -250,7 +258,7 @@ const Jobs = () => {
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
             jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+              const { company, abrev } = node.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
@@ -262,7 +270,7 @@ const Jobs = () => {
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
                   aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
+                  {!mobile ? <span>{company}</span> : <span>{abrev}</span>}
                 </StyledTabButton>
               );
             })}
