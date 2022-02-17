@@ -195,13 +195,30 @@ const Jobs = () => {
   const tabs = useRef([]);
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const windowWidth = window.innerWidth;
-  let mobile = false;
 
-  // If we're at mobile, use abrev
-  if (windowWidth <= 600) {
-    mobile = true;
+  function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
   }
+
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowDimensions;
+  }
+
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -270,7 +287,8 @@ const Jobs = () => {
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
                   aria-controls={`panel-${i}`}>
-                  {!mobile ? <span>{company}</span> : <span>{abrev}</span>}
+                  {/* {!mobile ? <span>{company}</span> : <span>{abrev}</span>} */}
+                  {abrev && width <= 600 ? <span>{abrev}</span> : <span>{company}</span>}
                 </StyledTabButton>
               );
             })}
