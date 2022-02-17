@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
@@ -135,12 +135,34 @@ const ArchivePage = ({ location, data }) => {
   const revealTable = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const windowWidth = window.innerWidth;
-  let mobile = false;
 
-  if (windowWidth <= 480) {
-    mobile = true;
+  //getWindowDimensions
+  function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
   }
+
+  // useWindowDimensions hook
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(
+      getWindowDimensions()
+    );
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return windowDimensions;
+  }
+
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -189,7 +211,7 @@ const ArchivePage = ({ location, data }) => {
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{archiveTitle && mobile ? archiveTitle : title}</td>
+                      <td className="title">{archiveTitle && width <= 480 ? archiveTitle : title}</td>
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
