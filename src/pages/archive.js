@@ -135,6 +135,7 @@ const ArchivePage = ({ location, data }) => {
   const revealTable = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+  const isBrowser = () => typeof window !== 'undefined';
 
   //getWindowDimensions
   function getWindowDimensions() {
@@ -147,7 +148,7 @@ const ArchivePage = ({ location, data }) => {
   // useWindowDimensions hook
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
+      isBrowser() && getWindowDimensions()
     );
 
     useEffect(() => {
@@ -212,6 +213,8 @@ const ArchivePage = ({ location, data }) => {
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
                       <td className="title">{archiveTitle && width <= 480 ? archiveTitle : title}</td>
+                      {/* <td className="title">{isBrowser() && width <= 480 && archiveTitle ? archiveTitle : title}</td> */}
+
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
