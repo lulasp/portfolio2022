@@ -5,7 +5,8 @@ module.exports = {
     title: 'Luís Serpa Pinto',
     description:
       'Luís Serpa Pinto is a software developer who specializes in building exceptional digital experiences.',
-    siteUrl: 'http://serpapinto.pt', // No trailing slash allowed!
+    // siteUrl: 'http://serpapinto.pt', // No trailing slash allowed!
+    siteUrl: 'https://serpapinto.herokuapp.com/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
