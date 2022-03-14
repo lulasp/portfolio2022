@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
@@ -71,22 +72,27 @@ const Footer = () => {
   const [githubInfo, setGitHubInfo] = useState({
     stars: null,
     forks: null,
+    britStars: null,
+    britForks: null,
   });
 
   useEffect(() => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/lulasp/portfolio2022')
-      .then(response => response.json())
-      .then(json => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
-      .catch(e => console.error(e));
+
+    const fetchData = async () => {
+      const respGlobal = await axios('https://api.github.com/repos/lulasp/portfolio2022');
+      const respBrit = await axios('https://api.github.com/repos/bchiang7/v4');
+
+      setGitHubInfo({
+        stars: respGlobal.data.stargazers_count,
+        forks: respGlobal.data.forks_count,
+        britStars: respBrit.data.stargazers_count,
+        britForks: respBrit.data.forks_count,
+      });
+    };
+    fetchData();
   }, []);
 
   return (
@@ -123,6 +129,19 @@ const Footer = () => {
         </a>
         <a href="https://github.com/bchiang7/v4" target="_blank">
           <div>Built by Brittany Chiang</div>
+
+          {githubInfo.britStars && githubInfo.britForks && (
+            <div className="github-stats">
+              <span>
+                <Icon name="Star" />
+                <span>{githubInfo.britStars.toLocaleString()}</span>
+              </span>
+              <span>
+                <Icon name="Fork" />
+                <span>{githubInfo.britForks.toLocaleString()}</span>
+              </span>
+            </div>
+          )}
         </a>
       </StyledCredit>
     </StyledFooter>
