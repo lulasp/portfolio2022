@@ -112,7 +112,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/lulasp/portfolio2022" target="_blank">
-          <div>Edited &amp; Updated by Luís Serpa Pinto</div>
+          <div>Edited &amp; Improved by Luís Serpa Pinto</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
