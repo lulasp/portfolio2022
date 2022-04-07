@@ -69,12 +69,12 @@ const StyledCredit = styled.div`
 `;
 
 const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-    britStars: null,
-    britForks: null,
-  });
+  // const [githubInfo, setGitHubInfo] = useState({
+  //   stars: null,
+  //   forks: null,
+  //   britStars: null,
+  //   britForks: null,
+  // });
 
   // useEffect(() => {
   //   // if (process.env.NODE_ENV !== 'production') {
@@ -111,7 +111,7 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/lulasp/portfolio2022" target="_blank">
+        <a href="https://github.com/lulasp/portfolio2022" target="_blank" rel="noreferrer">
           <div>Edited &amp; Improved by Luís Serpa Pinto</div>
 
           {/* {githubInfo.stars && githubInfo.forks && (
@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
           )} */}
         </a>
-        <a href="https://github.com/bchiang7/v4" target="_blank">
+        <a href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer">
           <div>Built by Brittany Chiang</div>
 
           {/* {githubInfo.britStars && githubInfo.britForks && (
