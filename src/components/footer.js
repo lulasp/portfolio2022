@@ -76,24 +76,24 @@ const Footer = () => {
     britForks: null,
   });
 
-  useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
+  // useEffect(() => {
+  //   // if (process.env.NODE_ENV !== 'production') {
+  //   //   return;
+  //   // }
 
-    const fetchData = async () => {
-      const respGlobal = await axios('https://api.github.com/repos/lulasp/portfolio2022');
-      const respBrit = await axios('https://api.github.com/repos/bchiang7/v4');
+  //   const fetchData = async () => {
+  //     const respGlobal = await axios('https://api.github.com/repos/lulasp/portfolio2022');
+  //     const respBrit = await axios('https://api.github.com/repos/bchiang7/v4');
 
-      setGitHubInfo({
-        stars: respGlobal.data.stargazers_count,
-        forks: respGlobal.data.forks_count,
-        britStars: respBrit.data.stargazers_count,
-        britForks: respBrit.data.forks_count,
-      });
-    };
-    fetchData();
-  }, []);
+  //     setGitHubInfo({
+  //       stars: respGlobal.data.stargazers_count,
+  //       forks: respGlobal.data.forks_count,
+  //       britStars: respBrit.data.stargazers_count,
+  //       britForks: respBrit.data.forks_count,
+  //     });
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <StyledFooter>
@@ -114,7 +114,7 @@ const Footer = () => {
         <a href="https://github.com/lulasp/portfolio2022" target="_blank">
           <div>Edited &amp; Improved by Luís Serpa Pinto</div>
 
-          {githubInfo.stars && githubInfo.forks && (
+          {/* {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
               <span>
                 <Icon name="Star" />
@@ -125,12 +125,12 @@ const Footer = () => {
                 <span>{githubInfo.forks.toLocaleString()}</span>
               </span>
             </div>
-          )}
+          )} */}
         </a>
         <a href="https://github.com/bchiang7/v4" target="_blank">
           <div>Built by Brittany Chiang</div>
 
-          {githubInfo.britStars && githubInfo.britForks && (
+          {/* {githubInfo.britStars && githubInfo.britForks && (
             <div className="github-stats">
               <span>
                 <Icon name="Star" />
@@ -141,7 +141,7 @@ const Footer = () => {
                 <span>{githubInfo.britForks.toLocaleString()}</span>
               </span>
             </div>
-          )}
+          )} */}
         </a>
       </StyledCredit>
     </StyledFooter>
