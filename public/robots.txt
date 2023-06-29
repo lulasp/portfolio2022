@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://serpapinto.pt/sitemap/sitemap-index.xml
+Host: serpapinto.pt
